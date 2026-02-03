@@ -40,6 +40,7 @@ from .sources.beamsources import IonPencilBeamSource, TreatmentPlanPBSource
 from .sources.gansources import GANPairsSource, GANSource
 from .sources.generic import GenericSource, SourceBase
 from .sources.lastvertexsources import LastVertexSource
+from .sources.positroniumsources import PositroniumSource
 from .sources.phidsources import PhotonFromIonDecaySource
 from .sources.phspsources import PhaseSpaceSource
 from .sources.voxelsources import VoxelizedPromptGammaTLESource, VoxelSource
@@ -53,6 +54,7 @@ from .utility import (
 from .voxelize import voxelize_geometry
 
 source_types = {
+    "PositroniumSource": PositroniumSource,
     "GenericSource": GenericSource,
     "DebugSource": DebugSource,
     "LastVertexSource": LastVertexSource,
