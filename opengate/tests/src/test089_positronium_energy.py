@@ -62,7 +62,8 @@ if __name__ == "__main__":
     source.position.radius = 1 * mm
     source.n = 10_000
 
-    source.positronium_fractions = [1.]
+    source.channels_from_fractions.fractions = [1.]
+    source.channels_from_fractions.decay_kinds = ["k3Gamma"]
     source.positronium_lifetimes = [0.122 * ns]
     source.decay_kinds = ["k3Gamma"]
     source.prompt_photon_probabilities = [0.]
